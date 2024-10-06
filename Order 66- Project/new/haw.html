@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Height and Weight Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="solarsystem.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <table>
+          <tr>
+            <td>
+              <button class="nav1" onclick="window.location='exoplanetexploration.html'">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span> HOME
+              </button>
+            </td>
+            <td>
+              <button class="nav1" onclick="display('sectionplanets')">
+                <span class="icon"><ion-icon name="planet"></ion-icon></span> PLANETS
+              </button>
+            </td>
+            <td>
+              <button class="nav1" onclick="display('sectionrocket')">
+                <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span> ROCKETS
+              </button>
+            </td>
+    
+            <td>
+              <button class="nav1" onclick="window.location='haw.html'">
+                <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span> EXPLORE
+              </button>
+            </td>
+        
+            <td>
+              <button class="nav1" onclick="display('sectioneclipse')">
+                <span class="icon"><ion-icon name="sunny-outline"></ion-icon></span> ECLIPSE
+              </button>
+            </td>
+        
+            <td>
+              <button class="nav1" onclick="display('sectionlogin')" title="Login to know more about astronomical events">
+                <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span> LOGIN
+              </button>
+            </td>
+          
+            <td>
+              <button class="nav1" onclick="display('sectionmoon')">
+                <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span> INFO
+              </button>
+            </td>
+          </tr>
+        </table>
+        
+        
+      </nav>
+    <div class="container">
+        
+        <h1>Exoplanet Weight Calculator</h1>
+        <form id="inputForm">
+            <label for="height"> Space </label>
+            <select id="planet" name="planet">
+                <option value="Gliese 667 Cc">Gliese 667 Cc</option>
+                <option value="Kepler-186f">Kepler-186f</option>
+                <option value="Kepler-22b">Kepler-22b</option>
+            </select>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="planet">Select an Exoplanet:</label>
+            <select id="planet" name="planet">
+                <option value="Gliese 667 Cc">Gliese 667 Cc</option>
+                <option value="Kepler-186f">Kepler-186f</option>
+                <option value="Kepler-22b">Kepler-22b</option>
+                <option value="Proxima Centauri b">Proxima Centauri b</option>
+                <option value="Kepler-1649c">Kepler-1649c</option>
+                <option value="Kepler-62f">Kepler-62f</option>
+                <option value="TRAPPIST-1e">TRAPPIST-1e</option>
+                <option value="Wolf 1061c">Wolf 1061c</option>
+                <option value="Tau Ceti e">Tau Ceti e</option>
+            </select>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <!-- Chart for result -->
+        <canvas id="resultChart"></canvas>
+    </div>
+
+    <div id="textOutput" class="text-output"></div>
+
+    <img id="astronaut" src="pic1.png" alt="Astronaut" />
+
+    <script src="index.js"></script>
+</body>
+</html>
+

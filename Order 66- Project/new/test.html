@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="solarsystem.css">
+    <script src="Images/solarsystem.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+    /* Styling the iframe to occupy the full screen */
+    iframe {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none; /* Optional: remove borders */
+    }
+  </style>
+</head>
+<!-- Start of Body Section -->
+<body>
+  <!-- Start of Division -->
+  <div id="main-content" class="main">
+    <!-- Start of Navigation -->
+    <nav>
+      <table>
+        <tr>
+          <td>
+            <button class="nav1" onclick="display('sectionhome')">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span> HOME </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectionplanets')">
+              <span class="icon">
+                <ion-icon name="planet"></ion-icon>
+              </span> PLANETS </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectionrocket')">
+              <span class="icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </span> ROCKETS </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectionexplore')">
+              <span class="icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </span> EXPLORE </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectioneclipse')">
+              <span class="icon">
+                <ion-icon name="sunny-outline"></ion-icon>
+              </span> ECLIPSE </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectionlogin')" title="Login to know more about astronomical events">
+              <span class="icon">
+                <ion-icon name="log-in-outline"></ion-icon>
+              </span> LOGIN </button>
+          </td>
+          <td>
+            <button class="nav1" onclick="display('sectionmoon')">
+              <span class="icon">
+                <ion-icon name="information-circle-outline"></ion-icon>
+              </span> INFO </button>
+          </td>
+        </tr>
+      </table>
+      <!-- End of Navigation -->
+    </nav>
+    <!-- Start of Division -->
+    <div id="sectionhome">
+      <!-- Start of Division -->
+      <div class="container-fluid mt-3">
+        <!-- Start of Division -->
+        <div class="row">
+          <!-- Start of Division -->
+          <div class="col-sm-12 bg-dark iframe">
+              <iframe src="intro/index.html"></iframe>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <br>
+        <!-- Start of Division -->
+        <div class="row">
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://science.nasa.gov/exoplanet-catalog/kepler-186-f/" target="_blank" data-toggle="tooltip" data-placement="top" title="Satish Dhawan">
+                <img src="Images/Kepler 186f - 3.png" width="100%">
+              </a>
+              <h2 class="headline">Kepler 186f</h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="row">
+              <!-- Start of Division -->
+              <div class="col-sm-4 bg-dark">
+                <a href="https://science.nasa.gov/exoplanet-catalog/wolf-1061-c/" target="_blank" data-toggle="tooltip" data-placement="top" title="Rocket">
+                  <img src="Images/Wolf 1061c 3.jpg" width="100%">
+                </a>
+                <h4 class="headline">Wolf 1061c</h4>
+                <!-- End of Division -->
+              </div>
+              <!-- Start of Division -->
+              <div class="col-sm-4 bg-dark">
+                <!-- Start of Division -->
+                <div class="image-container">
+                  <a href="https://science.nasa.gov/exoplanet-catalog/tau-ceti-e/" target="_blank" data-toggle="tooltip" data-placement="top" title="Launch Pad">
+                    <img src="Images/Tau Ceti e 1.jpg" width="100%">
+                  </a>
+                  <h4 class="headline">Tau Ceti e</h4>
+                  <!-- End of Division -->
+                </div>
+                <!-- End of Division -->
+              </div>
+              <!-- Start of Division -->
+              <div class="col-sm-4 bg-dark">
+                <a href="https://science.nasa.gov/exoplanet-catalog/kepler-1649-c/" target="_blank" data-toggle="tooltip" data-placement="top" title="Solid Stage Assembly Building">
+                  <img src="Images/Kepler 1649c 2.jpg" width="100%">
+                </a>
+                <h4 class="headline">Kepler 1649c</h4>
+                <!-- End of Division -->
+              </div>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <br>
+        <!-- Start of Division -->
+        <div class="row"> <!--sp 1-->
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://www.nasa.gov/feature/how-do-planets-get-their-names-we-asked-a-nasa-scientist-episode-45">
+                <img src="Images/planets_names.jpeg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <br>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <h1 style="color: rgb(5, 7, 9);text-align: center;padding-top:10px;padding-bottom:10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;background-color: rgb(190, 142, 235);">SPACE NEWS</h1>
+            <br>
+            <br>
+            <br>
+            <a >
+              <h1 class="news">Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system.<br><br>
+                  They vary widely in size, composition, and distance from their host stars.<br><br>
+                  Detection methods include the transit method, where a planet passes in front of its star, causing a temporary dimming, and the radial velocity method, which measures the star's wobble due to gravitational interactions with the planet.<br><br>
+                  Thousands of exoplanets have been discovered, some located in the habitable zone where conditions might allow for liquid water, raising the possibility of life beyond Earth.</h1>
+            </a>
+            
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://gis.earthdata.nasa.gov/portal/apps/sites/#/earth-information-center">
+                <img src="Images/earth.jpg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <!-- Start of Division -->
+        <div class="row"> <!--sp 2-->
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://www.nasa.gov/feature/how-do-planets-get-their-names-we-asked-a-nasa-scientist-episode-45">
+                <img src="Images/planets_names.jpeg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <br>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <h1 style="color: rgb(5, 7, 9);text-align: center;padding-top:10px;padding-bottom:10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;background-color: rgb(190, 142, 235);">SPACE NEWS</h1>
+            <br>
+            <br>
+            <br>
+            <a >
+              <h1 class="news">Exoplanets are primarily detected using several key methods, each with distinct advantages.<br><br>
+                The "Transit method" is one of the most successful techniques, where astronomers monitor the brightness of stars over time.<br><br>
+                When a planet passes in front of its host star, it causes a temporary dip in the star’s brightness, allowing researchers to infer the planet’s size and orbit.<br><br>
+                The "radial velocity method" complements this by measuring the star's wobble caused by the gravitational pull of an orbiting planet.<br><br>
+                This method detects shifts in the star’s spectrum, revealing the planet's mass and orbit.<br><br>
+                Other techniques include direct imaging, where telescopes capture images of exoplanets by blocking out the star's light, and **gravitational microlensing, which uses the gravitational field of a star to magnify the light from a more distant background star, revealing the presence of planets.<br><br>
+                Each method has contributed to a diverse catalog of exoplanets, enhancing our understanding of their properties and distribution across the galaxy.</h1>
+            </a>
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://gis.earthdata.nasa.gov/portal/apps/sites/#/earth-information-center">
+                <img src="Images/earth.jpg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <!-- Start of Division -->
+        <div class="row"> <!--sp 3-->
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://www.nasa.gov/feature/how-do-planets-get-their-names-we-asked-a-nasa-scientist-episode-45">
+                <img src="Images/planets_names.jpeg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <br>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <h1 style="color: rgb(5, 7, 9);text-align: center;padding-top:10px;padding-bottom:10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;background-color: rgb(190, 142, 235);">SPACE NEWS</h1>
+            <br>
+            <br>
+            <br>
+            <a >
+              <h1 class="news">Exoplanets can be classified into several types: "Gas giants" like Jupiter and Saturn are large and composed mainly of hydrogen and helium.<br><br>
+                "Ice giants, such as Uranus and Neptune, contain significant amounts of water and ammonia ices."<br><br>
+                "Terrestrial planets" are rocky, with solid surfaces like Earth and Mars.<br><br>
+                "Super-Earths" are larger than Earth but smaller than gas giants, often found in habitable zones.<br><br>
+                "Mini-Neptunes" are smaller gas giants with thick atmospheres.<br><br>
+                "Hot Jupiters" orbit close to their stars, resulting in high temperatures, while "Cold gas giants" are found farther away and are cooler.<br><br>
+                "Pulsar planets" orbit pulsars, and "Rogue planets" drift through space without orbiting a star. Each type offers insights into planetary formation and the potential for extraterrestrial life.</h1>
+            </a>
+            
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-3 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://gis.earthdata.nasa.gov/portal/apps/sites/#/earth-information-center">
+                <img src="Images/earth.jpg" width="100%" height="100%">
+              </a>
+              <h2 class="headline"></h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <!-- Start of Division -->
+        <div class="row">
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://en.wikipedia.org/wiki/Kalpana_Chawla">
+                <img src="Images/KalpanaChawla.jpeg">
+              </a>
+              <h2 class="headline">Kalpana Chawla</h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster">
+                <img src="Images/sts107team.jpeg">
+              </a>
+              <h2 class="headline">THE STS-107 DISASTER</h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <!-- Start of Division -->
+        <div class="row">
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <img src="Images/Picofday.jpeg">
+              <h2 class="headline" style="text-align: center;">PIC OF THE DAY</h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- Start of Division -->
+          <div class="col-sm-6 bg-dark">
+            <!-- Start of Division -->
+            <div class="image-container">
+              <a href="https://science.nasa.gov/astrophysics/focus-areas/what-are-galaxies#:~:text=Our%20galaxy%2C%20the%20Milky%20Way,all%20held%20together%20by%20gravity.">
+                <img src="Images/galaxy.jpg">
+              </a>
+              <h2 class="headline">OUR GALAXIES</h2>
+              <!-- End of Division -->
+            </div>
+            <!-- End of Division -->
+          </div>
+          <!-- End of Division -->
+        </div>
+        <a href="#" class="top11" style="text-decoration:none;">Back to Top &#8593;</a>
+        <!-- End of Division -->
+      </div>
+      <!-- End of Division -->
+    </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Height and Weight Comparison</title>
+    <link rel="stylesheet" href="stylesN.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styleN.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:black">Exoplanets: A Physics Insight </h1><br>
+        <form id="inputForm">
+            <label for="exoplanetType">Select an Exoplanet Type:</label>
+            <select id="exoplanetType" name="exoplanetType" onchange="updateAttributes()">
+                <option value="" disabled selected>Select a type</option>
+                <option value="space">Space</option>
+                <option value="time">Time</option>
+                <option value="energy">Energy</option>
+            </select>
+
+            <label for="attributes">Attributes</label>
+            <select id="attributes" name="attributes">
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <label for="planet">Select an Exoplanet:</label>
+            <select id="planet" name="planet">
+                <option value="" disabled selected>Select an Exoplanet</option>
+                <!-- Options will be populated from CSV -->
+            </select>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <!-- Chart for result -->
+        <canvas id="resultChart" style="display: none;"></canvas>
+    </div>   
+
+    <div class="container1">
+        <iframe src="solar_system.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+
+    
+    
+    <div id="textOutput" class="text-output" style="display: none;"></div>
+
+    <img id="astronaut" src="pic1.png" alt="Astronaut" />
+    <script type="text/javascript">
+        $(window).load(function() {
+          var body = $("body"),
+              universe = $("#universe"),
+              solarsys = $("#solar-system");
+    
+          var init = function() {
+            body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
+              $(this).removeClass('hide-UI').addClass("set-speed");
+              $(this).dequeue();
+            });
+          };
+    
+          var setView = function(view) { universe.removeClass().addClass(view); };
+    
+          $("#toggle-data").click(function(e) {
+            body.toggleClass("data-open data-close");
+            e.preventDefault();
+          });
+    
+          $("#toggle-controls").click(function(e) {
+            body.toggleClass("controls-open controls-close");
+            e.preventDefault();
+          });
+    
+          $("#data a").click(function(e) {
+            var ref = $(this).attr("class");
+            solarsys.removeClass().addClass(ref);
+            $(this).parent().find('a').removeClass('active');
+            $(this).addClass('active');
+            e.preventDefault();
+          });
+    
+          $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
+          $(".set-zoom").click(function() { body.toggleClass("zoom-large zoom-close"); });
+          $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
+          $(".set-size").click(function() { setView("scale-s set-size"); });
+          $(".set-distance").click(function() { setView("scale-d set-distance"); });
+    
+          init();
+        });
+      </script>
+</body>
+</html>

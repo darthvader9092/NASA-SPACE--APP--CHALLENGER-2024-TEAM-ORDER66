@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1516797045820-6edca89b2830?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJsYWNrJTIwc3BhY2V8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    margin: 0;
+    position: relative; /* This allows the absolute positioning of the container */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    position: relative; /* Positioning the container */
+    top: 200px; /* Adjust the value as needed */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    animation: jelly 1s ease-in-out;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+canvas {
+    display: none;
+    margin-top: 20px;
+}
+
+.text-output {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 40%;  /* Adjust distance from the bottom */
+    right: 22%;    /* Adjust distance from the right */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 10px;  /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    z-index: 15;     /* Ensure it's above other elements */
+    max-width: 250px; /* Set a max-width for the container */
+    display: none;   /* Hide it by default */
+}
+
+@keyframes jelly {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#astronaut {
+    position: fixed; /* Fixes the position to the viewport */
+    bottom: 20px;    /* Distance from the bottom */
+    right: 20px;     /* Distance from the right */
+    width: auto;     /* Adjust width as necessary */
+    height: auto;    /* Maintain aspect ratio */
+    z-index: 10;     /* Ensures it appears above other elements */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Allow full width on smaller screens */
+        top: 150px; /* Adjust position for smaller screens */
+        left: 50%; /* Centering */
+        transform: translateX(-50%); /* Centering */
+    }
+
+    h1 {
+        font-size: 1.3em; /* Slightly smaller title */
+    }
+
+    input, select, button {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    .text-output {
+        bottom: 80px; /* Adjust position for smaller screens */
+        right: 10px; /* Adjust position for smaller screens */
+        max-width: 90%; /* Max width for text output */
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Further reduce title size */
+    }
+
+    input, select, button {
+        font-size: 12px; /* Even smaller font size for inputs */
+    }
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="solarsystem.css">
+    <script src="solarsystem.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+      body{
+        background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <table>
+            <tr>
+                <td>
+                  <a class="nav1" href="home.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span> HOME
+                  </a>
+                </td>
+                <td>
+                    <a href="planets.html" class="nav1">
+                        <span class="icon"><ion-icon name="planet"></ion-icon></span> Planets
+                    </a>
+                </td>
+                <td>
+                  <a href="simulations.html" class="nav1">
+                    <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span> SIMULATIONS
+                  </a>
+                </td>
+            
+                <td>
+                  <a href="eclipse.html" class="nav1">
+                    <span class="icon"><ion-icon name="sunny-outline"></ion-icon></span> PHYSICS
+                  </a>
+                </td>
+            
+                <td>
+                  <a href="login.html">
+                    <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span> LOGIN
+                  </a>
+                </td>
+              
+                <td>
+                  <a href="info.html">
+                    <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span> INFO
+                  </a>
+                </td>
+              </tr>
+        </table>
+        
+        
+      </nav>
+      <div class="login" id="sectionlogin">
+        <div class="login-page">
+          <div class="form">
+            <div class="login">
+            
+        <form class="login-form">
+        <fieldset class="justify-content-center">
+          <div class="login-header">
+          <legend>
+            Login To Know More About Astronomical Events
+          </legend>
+           </div>
+          </div>
+          <table class="table1">
+            <tr>
+              <td><label for="name">Name: </label></td>
+              <td><input type="text" id="name" size="50px"></td>
+            </tr>
+            <tr>
+              <td><label for="date">Date Of Birth: </label></td>
+              <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+              <td><label for="male" id="gender">Gender: </label></td>
+              <td>
+                <label for="male">Male</label>
+                <input type="radio" name="male" id="male">
+                <label for="male">Female</label>
+                <input type="radio" name="male" id="female">
+                <label for="male">Other</label>
+                <input type="radio" name="male" id="other">
+                </td>
+            </tr>
+            <tr>
+              <td><label for="tel">Mobile: </label></td>
+              <td><input type="tel" name="tel" id="tel"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email: </label></td>
+              <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password: </label></td>
+              <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label for="retype">Confirm Password: </label></td>
+              <td><input type="password" name="retype" id="retype"></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+              <center>
+                <button type="submit" onclick="valid()">Login</button>
+              </center>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+    </div>
+      </div>
+      <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+      
+     </div>
+    
+    </body>
+    </html>

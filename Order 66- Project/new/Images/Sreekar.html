@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</Sreekar-Resume></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            :root{
+                --bgcolor:#beb8ac;
+                --blue:#2fb7fe;
+                --black:#3d3f42;
+                --white:#f4f7ff;
+                --gray:#d8dce4;
+                --lightgray:#8e9095;
+
+            }
+            *{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body{
+                background:var(--bgcolor);
+                background-color: #333;
+            }
+            .clearfix{
+                clear:both;  
+            }
+            .resume-box{
+                width: 800px;
+                height:1000px;
+                margin: 100px auto;
+                background:var(--white);
+                box-shadow:5px 21px 20px #3d3f4238;
+            }
+            .left-section{
+                background:var(--black);
+                width:250px;
+                height:1000px;
+                float:left;
+            }
+            .profile{
+                overflow:hidden;
+                position:relative;
+            }
+            .blue-box{
+                width:257px;
+                height:407px;
+                background:var(--blue);
+                margin-left:-100px;
+                transform:rotatez(48deg);
+                margin-top:-178px;
+
+            }
+            .profile-img{
+                position:absolute;
+                z-index:9;
+                width:150px;
+                height:150px;
+                transform:translate(-50%,-50%);
+                left:115px;
+                top:100px;
+                border-radius: 90%;
+                border: 3px solid var(--gray);
+            }
+            .name{
+                color:var(--gray);
+                text-align:center;
+                margin-top:-34px;
+                font-size:30px;
+                letter-spacing:2px;
+                font-weight:400;
+                text-transform: uppercase;
+            }
+            .name span{
+                color:var(--blue);
+            }
+            .n-p{
+                width:100px;
+                margin:0 auto;
+                text-align:center;
+                padding:7px;
+                border-bottom: 1px solid var(--gray);
+                border-top:1px solid var(--gray);
+                color:var(--gray);
+                margin-top:11px ;
+                text-transform: uppercase;
+
+            }  
+            .info{
+                margin-top: 50px;
+            }
+            .heading{
+                width:100px;
+                margin:0 auto;
+                padding:2px;
+                border-bottom: 1px solid var(--gray);
+                border-top:1px solid var(--gray);
+                color:var(--gray);
+                margin-top:11px ;
+                text-transform: uppercase;
+                font-size:18px;
+            }
+            .p1{
+                color:var(--gray);
+                width:184px;
+                margin:0 auto;
+                margin-top:25px;
+                font-size:15px;
+                line-height:14px;
+            }
+            .p1 span{
+                font-size:12px;
+            }
+            .span1 img{
+                background:white;
+                width:30px;
+                padding: 6px;
+                border-radius: 16px;
+                float: left;
+                margin-right:10px;
+            }
+            .right-section{
+                padding: 40px 30 px;
+                background: var(--white);
+                width: 68%;
+                float: left;
+                height: 100px;
+            }
+            .right-heading img{
+                background: var(--black);
+                width:36px;
+                padding: 7px;
+                border-radius: 17px;
+                
+                display: inline-block;
+                margin-top: -6px;
+
+            }
+            .p2{
+                margin:0 auto;
+                padding:2 px;
+                border-bottom: 1px solid var(--lightgray);
+                border-top:1px solid var(--lightgray);
+                color:var(--black);
+                text-transform: uppercase;
+                font-size:18px;
+                font-weight:bolder ;
+                margin-left: 50px;
+                line-height: 18px;
+            }
+            .p3{
+                margin-top:20px;
+                color:var(--lightgray);
+                text-align:justify;
+                word-spacing:-4px;
+            }
+            .left{
+                width:25%;
+                float:left;
+
+            }
+            .right{
+                width:75%;
+                float:left;
+
+            }
+            .ir-box{
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+            .p4{
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .p5{
+                font-size: 12px;
+                color: var(--lightgray);
+            }
+            .s-box{
+                width: 50%;
+                float:left;
+                padding: 20px 20px 20px 0px;
+            }
+            #progress{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:90%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress1{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress1:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:93%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress2{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress2:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:95%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress3{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress3:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:99%;
+                height:100%;
+                border-radius: 9px;
+            }
+            .p6{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .h-img{
+                margin-top: 25px;
+                width: 45px;
+                margin-right:45px ;
+            }
+                </style>
+    </head>
+    <body>
+
+
+    <div class="resume-box">
+        <div class="left-section">
+            <div class="profile">
+                <img src="Sreekarp.jpg" class= "profile-img">   
+                <div class="blue-box"></div>
+        </div>
+        <h2 class="name">Sreekar Bharadwaj<br><span>Pisipati</span></h2>
+        <p class="n-p">ARTIFICAL-INTELLIGENCE</p>
+        <div class="info">
+            <p class="heading">Info</p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.s0I_dMcX1Ezo6A0H3HWCKgHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Address
+            <br>D-N0:49-48-19/2 Akkayyapalem,Visakhapatnam</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.FjhwL25mlD7DlDURqHCAOgHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>phone
+            <br>+91 9177577494</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.ZYBoGvR_bfdiAQLZZpVHQAHaFj?w=231&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Email
+            <br>pisipatisreekar02@gmail.com</span></p>
+
+        </div>
+
+        <div class="info">
+            <p class="heading">Social</p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.Qsl7ZlqntEmmCLXEnfxLOgHaHa?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Instagram
+            <br>@sreekar.pisipati</span></p>
+            <!-- <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.Jf5-Use2r12rvoxLcThZhAHaEL?pid=ImgDet&rs=1"</span>Facebook
+            <br>sunnysanthosh</span></p> -->
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>linkdin
+            <br>SreekarBharadwaj</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.PXTov9TveYX3Upu592UOygHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>twitter
+            <br>Sreekar_</span></p>
+        </div>
+    </div>
+
+
+
+    <div class="right-section">
+        <dgiv style=" padding: 15px;">
+        <!-- <div class="right-heading">
+            <br>
+            <img src="https://th.bing.com/th/id/OIP.Cz-YiQOApQzTo_RPSG906wHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <p class="p2">Profile</p>
+        </div> -->
+        <p class="p3">
+        
+        </p><br><br>
+        <div class="clearfix"></div>
+        <div class="right-heading">
+            <img src="image/pencil.png">
+            <div class="profile-section">
+                <div class="header">
+                    <p class="section-title">PROFILE</p>
+                </div>
+                <div class="clearfix"></div>
+                
+                <div class="profile-details">
+                    <div class="left-column">
+                        <p class="detail">Age: 19</p>
+                        <p class="detail">Blood Group: B+</p>
+                    </div>
+                    
+                    <div class="right-column">
+                        <h3>10th Grade</h3>
+                        <h4>96.5%</h4>
+                        <h3>Intermediate</h3>
+                        <h4>95.1%</h4>
+                        <h3>B.Tech</h3>
+                        <h4>8.13</h4>
+                        <p class="detail">Favorite Athlete: Virat Kohli</p>
+                        <h3 class="detail">Career Interests: Data Analyst, AI Engineer</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="right-heading">
+            <!-- <img src="https://th.bing.com/th/id/OIP.R2ipR3TPO_IbebE11LoOyAHaF-?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"> -->
+            <p class="p2">Education</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">Elementary School</p>
+                <p class="p5"></p>
+                <p class="p5">2010-2016</p>
+            </div>
+            <div class="right">
+                <p class="p4">Sri Krishna Vidya Mandir School </p>
+                <p class="p5">Visakhapatnam</p>
+
+            </div>
+        <div class="clearfix"></div>
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">Secondary High School</p>
+                <p class="p5"></p>
+                <p class="p5">2016-2020</p>
+            </div>
+            <div class="right">
+                <p class="p4">Sri Prakash Vidyaniketan</p>
+                <p class="p5">Visakhapatnam</p>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">INTERMEDIATE</p>
+                <p class="p5">2020-2022</p>
+            </div>
+            <div class="right">
+                <p class="p4">FIITJEE</p>
+                <p class="p5">Visakhapatnam</p>
+
+            </div>
+
+            <br><br>
+            <div class ="ir-box">
+                <div class="left">
+                    <p class="p4">UG</p>
+                    <P class="p5">2022-2026</P>
+                </div>
+                <div class="right">
+                    <p class="p4">AMRITA VISHWA VIDYAPEETHAM</p>
+                    <p class="p5">KERALA</p>
+                </div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <br>
+        <div class="right-heading">
+            <img src="https://th.bing.com/th/id/OIP.o2inSZ6E94mYzZPcrnw_SQHaHR?w=207&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <p class="p2">Skills And Expertize</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class=>
+            <p class="p6">C</p>
+            <div id="progress"></div>
+            <p class="p6">java</p>
+            <div id="progress1"></div>
+        </div>
+
+        <div class="clearfix">
+            <p class="p6">Python</p>
+            <div id="progress2"></div>
+            <p class="p6">Front end development</p>
+            <div id="progress3"></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br><br>

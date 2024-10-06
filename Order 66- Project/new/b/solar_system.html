@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System</title>
+    <link rel="stylesheet" href="styleN.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <div id="navbar">
+        <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+        <h1>3D Exo-Solar System<br><span>in <a href="https://twitter.com/JulianGarnier" target="_blank">Universe</a></span></h1>
+        <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+    </div>
+
+    <div id="data">
+        <a class="venus" title="venus" href="#venusspeed">Venus</a>
+        <a class="earth active" title="earth" href="#earthspeed">Earth</a>
+    </div>
+
+    <div id="controls">
+        <label class="set-view">
+            <input type="checkbox">
+        </label>
+        <label class="set-zoom">
+            <input type="checkbox">
+        </label>
+        <label>
+            <input type="radio" class="set-speed" name="scale" checked>
+            <span>Speed</span>
+        </label>
+        <label>
+            <input type="radio" class="set-size" name="scale">
+            <span>Size</span>
+        </label>
+        <label>
+            <input type="radio" class="set-distance" name="scale">
+            <span>Distance</span>
+        </label>
+    </div>
+
+    <div id="universe" class="scale-stretched">
+        <div id="galaxy">
+            <div id="solar-system" class="earth">
+                <div id="venus" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Proxima-Centauri</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="earth" class="orbit">
+                    <div class="pos">
+                        <div class="orbit">
+                            <div class="pos">
+                                <div class="moon"></div>
+                            </div>
+                        </div>
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Earth</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sun">
+                    <dl class="infos">
+                        <dt>Sun</dt>
+                        <dd><span></span></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            var body = $("body"),
+                universe = $("#universe"),
+                solarsys = $("#solar-system");
+
+            var init = function() {
+                body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
+                    $(this).removeClass('hide-UI').addClass("set-speed");
+                    $(this).dequeue();
+                });
+            };
+
+            var setView = function(view) { universe.removeClass().addClass(view); };
+
+            $("#toggle-data").click(function(e) {
+                body.toggleClass("data-open data-close");
+                e.preventDefault();
+            });
+
+            $("#toggle-controls").click(function(e) {
+                body.toggleClass("controls-open controls-close");
+                e.preventDefault();
+            });
+
+            $("#data a").click(function(e) {
+                var ref = $(this).attr("class");
+                solarsys.removeClass().addClass(ref);
+                $(this).parent().find('a').removeClass('active');
+                $(this).addClass('active');
+                e.preventDefault();
+            });
+            try {
+                // Update Venus link to reflect the selected planet
+                $(".venus").text("Proxima Centauri b");
+                
+                // Venus Data
+                venusSpeed = solarSystemData.venus.speed || 34.76; // Default speed in km/h
+                venusSize = solarSystemData.venus.size || 38025; // Default size in km
+                venusDistance = solarSystemData.venus.distance || 107489691; // Default distance in km
+    
+                // Sun Data
+                sunSize = solarSystemData.sun.size || 4370005; // Default size in km
+                sunDistance = solarSystemData.sun.distance || 149598262; // Default distance in km
+    
+            } catch (error) {
+                console.error("Error accessing solar system data:", error);
+    
+                // Assign default values in case of error
+                venusSpeed = 34.76; // Default speed in km/h
+                venusSize = 38025; // Default size in km
+                venusDistance = 107489691; // Default distance in km
+    
+                sunSize = 4370005; // Default size in km
+                sunDistance = 149598262; // Default distance in km
+            }
+            $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
+            $(".set-zoom").click(function() { body.toggleClass("zoom-large zoom-close"); });
+            $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
+            $(".set-size").click(function() { setView("scale-s set-size"); });
+            $(".set-distance").click(function() { setView("scale-d set-distance"); });
+
+            init();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karthikeya-Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main {
+      max-width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 20px solid red;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: blue;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    #myphoto {
+      display: block;
+      height: 100px;
+      width: 110px;
+      margin: 20px auto;
+      border-radius: 50%;
+    }
+
+    .title {
+      text-align: center;
+      background-color: blue;
+      color: white;
+      padding: 5px;
+    }
+
+    .left {
+      width: 100%;
+      padding: 1.5%;
+      text-align: left;
+      background-color: pink;
+    }
+
+    .middle {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left,
+    .right {
+      box-sizing: border-box;
+      flex: 1 1 50%;
+      padding: 10px;
+    }
+
+    .skills ul li,
+    .Education ul li {
+      font-size: larger;
+      padding: 10px;
+    }
+
+    table {
+      border: 1px solid black;
+      width: 100%;
+    }
+
+    @media (min-width: 500px) {
+      .left {
+        width: 30%;
+      }
+
+      .right {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="header">
+        <h1>My Resume</h1>
+      </div>
+      <div class="middle">
+        <div class="left">
+          <img id="myphoto" src="karthikeyap.jpg" alt="photo" />
+          <div class="title">ABOUT ME</div>
+          <div class="box">
+            <ul>
+              <li>NAME: BALLA KARTHIKEYA</li>
+              <li>Deep Learning and Neural Networks</li>
+              <li><i>&#9993;</i> karthikeyaballa</li>
+              <li><i>&phone;</i> 7207133437</li>
+              <li>Andhra Pradesh</li>
+            </ul>
+          </div>
+          <div class="Education">
+            <table>
+              <tr>
+                <td>
+                  <h2 class="title">EDUCATION</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Bachelor of computer science Engineer in artificial intelligence
+                    </li>
+                    <li>2016-2020</li>
+                    <li>Amrita Viswa Vidyapeetham (Amritapuri)</li>
+                    <li>Master of technology in computer science Engineer</li>
+                    <li>Amrita Viswa Vidyapeetham (amritapuri)</li>
+                    <li>2020-2022</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="Hobbies">
+            <table>
+              <tr>
+                <td>
+                  <h2 class="title">Hobbies</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Reading books</li>
+                    <li>Watching movies</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="skills">
+            <table>
+              <tr>
+                <td>
+                  <h2 class="title">LANGUAGES</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>C</li>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="right">
+          <h2 class="title">SKILL</h2>
+          <p>
+            <strong>Interested in Deep Learning and Neural Networks</strong>
+          </p>
+          <p>
+            <strong>Interested in Machine Learning Algorithms</strong>
+          </p>
+          <p>
+            <strong>Big Data Analytics</strong>
+          </p>
+          <h3 class="title">WORK EXPERIENCE</h3>
+          <p>
+            <strong>2022-september</strong><br />
+            <strong>Data Scientist</strong><br />
+            Worked at Google as a Data Scientist, having expertise in using Big Data platforms and tools, including Hadoop, Pig, Hive, Spark, and MapReduce.
+          </p>
+          <p>
+            <strong>jan2023-april2023</strong><br/>
+
+            <strong>AI Product Manager</strong><br />
+            Worked as an AI Product Manager in Singapore, with experience in Model Development and Evaluation, and Data Management.
+          </p>
+          <p>
+            <strong>april2023-sept2023</strong>
+            <strong>Deep Learning Engineer</strong><br />
+            Worked as a Deep Learning Engineer in Delhi, with experience in creating and implementing deep learning algorithms to address complicated issues in various fields, including finance, healthcare, and autonomous vehicles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

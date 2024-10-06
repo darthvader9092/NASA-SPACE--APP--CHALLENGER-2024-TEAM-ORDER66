@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Members</title>
+    <style>
+        /* Body and overall layout styling */
+        body {
+            font-family: 'Times-new-roman', sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Section styling */
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ecf0f1;
+            color: #19222c;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-transform: uppercase;
+        }
+
+        td {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+        }
+
+        tr:hover {
+            background-color: #dfe6e9;
+        }
+
+        /* Team Member card styling */
+        .team-member {
+            background-color: #34495e;
+            color: #ecf0f1;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Highlight name and role */
+        .highlight {
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+
+        /* Styling paragraphs for member descriptions */
+        p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            th, td {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+        }
+        td{
+            background-color: #1E2243;
+        }
+        tr td{
+            color:white;
+        }
+    </style>
+    <link rel="stylesheet" href="solarsystem.css">
+</head>
+<body>
+    <nav>
+        <table>
+          <tr>
+            <td>
+              <a class="nav1" href="home.html">
+                <span class="icon"><ion-icon name="Images/home-outline"></ion-icon></span> HOME
+              </a>
+            </td>
+            <td>
+                <a href="planets.html" class="nav1">
+                    <span class="icon"><ion-icon name="Images/planet"></ion-icon></span> Planets
+                </a>
+            </td>
+            <td>
+              <a href="simulations.html" class="nav1">
+                <span class="icon"><ion-icon name="Images/rocket-outline"></ion-icon></span> SIMULATIONS
+              </a>
+            </td>
+        
+            <td>
+                <a href="eclipse.html" class="nav1">
+                  <span class="icon"><ion-icon name="Images/sunny-outline"></ion-icon></span> ECLIPSE
+                </a>
+            </td>
+        
+            <td>
+              <a href="login.html">
+                <span class="icon"><ion-icon name="Images/log-in-outline"></ion-icon></span> LOGIN
+              </a>
+            </td>
+          
+            <td>
+              <a href="info.html">
+                <span class="icon"><ion-icon name="Images/information-circle-outline"></ion-icon></span> INFO
+              </a>
+            </td>
+          </tr>
+        </table>
+        
+        
+      </nav>
+
+<section name="Team_members">
+    <h2>Our Team</h2>
+
+    <!-- Table for displaying information concisely -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Role</th>
+            <th>Specialization</th>
+        </tr>
+        <tr>
+            <td>A. Sree Tharun Raju</td>
+            <td>AM.EN.U4AIE22001</td>
+            <td>Team Lead</td>
+            <td>Project Coordination, Problem Solving</td>
+        </tr>
+        <tr>
+            <td>M. Sai Sathvik</td>
+            <td>AM.EN.U4CSE22335</td>
+            <td>Backend Developer</td>
+            <td>Server-side logic, Database Management</td>
+        </tr>
+        <tr>
+            <td>Ch. Nikhilesh</td>
+            <td>AM.EN.U4AIE22015</td>
+            <td>Machine Learning Engineer</td>
+            <td>Algorithms, Data Analysis</td>
+        </tr>
+        <tr>
+            <td>P. Sreekar Bharadwaj</td>
+            <td>AM.EN.U4AIE22142</td>
+            <td>Front-end Developer</td>
+            <td>User Interface, UX Design</td>
+        </tr>
+        <tr>
+            <td>N. Kireeti Sai Bharadwaj</td>
+            <td>AM.EN.U4AIE22037</td>
+            <td>Research Engineer</td>
+            <td>Technical Feasibility, Prototyping</td>
+        </tr>
+        <tr>
+            <td>K.Sujay Bharath Raj</td>
+            <td>AM.EN.U4AIE22027</td>
+            <td>Quality Assurance</td>
+            <td>Testing, Debugging</td>
+        </tr>
+    </table>
+
+    <!-- Team Member Descriptions -->
+    <div class="team-member">
+        <p><span class="highlight">A. Sree Tharun Raju (Team Lead)</span> ensures the project runs smoothly by organizing tasks, resolving issues, and making sure deadlines are met. His leadership and problem-solving skills are vital to the team's success.</p>
+    </div>
+
+    <div class="team-member">
+        <p><span class="highlight">M. Sai Sathvik (Backend Developer)</span> handles server-side operations and ensures that the database is well managed. His expertise in backend development is crucial for maintaining system performance and scalability.</p>
+    </div>
+
+    <div class="team-member">
+        <p><span class="highlight">Ch. Nikhilesh (Machine Learning Engineer)</span> is responsible for implementing advanced machine learning algorithms. He works on building models that analyze and predict data with precision.</p>
+    </div>
+
+    <div class="team-member">
+        <p><span class="highlight">P. Sreekar Bharadwaj (Front-end Developer)</span> creates engaging user interfaces and ensures the website is user-friendly and responsive. His attention to detail in UX design enhances the overall user experience.</p>
+    </div>
+
+    <div class="team-member">
+        <p><span class="highlight">N. Kireeti Sai Bharadwaj (Research Engineer)</span> explores innovative solutions, prototypes new ideas, and ensures technical feasibility. His contributions push the boundaries of the team's technical capabilities.</p>
+    </div>
+
+    <div class="team-member">
+        <p><span class="highlight">K. Sujay Bharath Raj (Quality Assurance)</span> is in charge of testing and debugging the system, making sure that everything runs perfectly before final release. His focus on quality ensures a flawless product.</p>
+    </div>
+</section>
+
+</body>
+</html>

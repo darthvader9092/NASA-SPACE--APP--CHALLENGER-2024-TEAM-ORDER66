@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasu-Resume</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background-color: rgb(193, 242, 246);
+        }
+
+        .main {
+            max-width: 650px;
+            margin: 0 auto;
+            border: 10px solid #0c5275;
+            background-color: #8fd2ec;
+            box-shadow: 6px 7px 9px 5px #94c8e873;
+        }
+
+        .left, .right {
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        .right {
+           background-color: rgb(161, 216, 246);
+        }
+        .left {
+            width: 80%;
+        }
+
+        .profile_pic {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(224, 227, 227);
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 8px solid #0c5275;
+        }
+
+        .profile_pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .heading {
+            background-color: #4d4d4d;
+            padding: 10px;
+            color: #3bf5fb;
+            text-align: left;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .heading::after {
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            left: 191px;
+            top: 26px;
+        }
+
+        .p1 {
+            padding: 9px 10px;
+            font-size: 11px;
+        }
+
+        .skill-container {
+            width: 90%;
+            background-color: white;
+            margin: 0px 10px;
+        }
+
+        .skill {
+            text-align: right;
+            padding: 2px;
+            color: white;
+        }
+
+        .name-div {
+            padding: 30px 0 20px;
+            text-align: center;
+            letter-spacing: 3px;
+            background-color: #8fd2ec;
+        }
+
+        .name-div h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .b2 {
+            margin-top: 30px;
+        }
+
+        .p2 {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 20px;
+            margin-top: 5px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .abt_me {
+            color: black;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .main {
+                display: flex;
+            }
+            .left {
+                width: 200px;
+                float: left;
+            }
+            .right {
+                width: calc(100% - 200px);
+                float: right;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .heading::after {
+                left: 92px;
+                top: 13px;
+            }
+
+            .name-div h1 {
+                font-size: 20px;
+            }
+
+            .p1, .p2 {
+                font-size: 10px;
+            }
+
+            .skill-container {
+                width: 100%;
+            }
+
+            .name-div {
+                padding: 20px 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <br>
+            <div class="profile_pic">
+                <img src="vasup.jpg" alt="Profile Picture">
+            </div>
+            <div class="b1">
+                <div class="heading">
+                    <p>CONTACT</p>
+                </div>
+                <p class="p1"><i class="icons1">&phone;</i> 8523036097</p>
+                <p class="p1"><i class="icons1">&#9993;</i> vasu@gmail.com</p>
+                <p class="p1"><i class="icons1">&#xf0e1;</i> devragula</p>
+                <p class="p1"><i class="icons1">&#128205;</i> Amritapuri, Kollam</p>
+            </div>
+            <div class="b1">
+                <div class="heading">
+                    <p>LANGUAGES</p>
+                </div>
+                <p class="p1">HTML,CSS,JAVASCRIPT
+                    <div class="skill-container">
+                        <div class="skill html"></div>
+                    </div>
+                <p class="p1">JAVA
+                    <div class="skill-container">
+                        <div class="skill java"></div>
+                    </div>
+                </p>
+                <p class="p1">C</p>
+            </div>
+            <div class="b1">
+                <div class="heading">
+                    <p>SKILLS</p>
+                </div>
+                <p class="p1">CODING SKILLS</p>
+
+            </div>
+            <div class="b1">
+                <div class="heading">
+                    <p>LANGUAGES KNOWN</p>
+                </div>
+                <p class="p1" style="font-size: 12px;">English, Hindi, Telugu</p>
+                <div class="heading">
+                    <p>HOBBIES</p>
+                </div>
+                <span style="font-size: 30px;" class="material_icons1">&#128247; &#9834; &#128692;</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name-div">
+                <h1>DEV RAGULA</h1>
+                <p>(Student)</p>
+            </div>
+            <div class="b2">
+                <h3 style="font-size: 24px;">ABOUT ME <i class="abt_me">&#128100;</i></h3>
+                <p style="font-size: 14px;"><strong style="color: #0f5e93;">DATE OF BIRTH: </strong>22<sup>nd</sup> December-2005</p>
+                <p style="font-size: 14px;"><strong style="color: #0f5e93;">AGE: </strong>18yrs</p>
+                <p style="font-size: 14px;"><strong style="color: #0f5e93;">GENDER: </strong>Male</p>
+                <p style="font-size: 14px;"><strong style="color: #0f5e93;">BIRTH PLACE: </strong>Anantapur, INDIA</p>
+            </div>
+            <div class="b2">
+                <h3 style="font-size: 24px;">PROFILE <i class="abt_me">&#128100;</i></h3>
+                <p style="font-size: 14px;">
+                    Flexible to situations.
+                    <br>
+                    Good at coding
+                </p>
+            </div>
+            <div class="b2">
+                <h3 style="font-size: 24px;">EDUCATION <i class="abt_me">&#127891;</i></h3>
+                <p style="color:rgb(19, 202, 239);" class="p3">2019-2020<span> SSC-VAAGDEVI HIGH SCHOOL</span></p>
+                <p  class="p2">Gooty Road, Yadiki, Anantapur(Dist), Andhra Pradesh</p>
+                <p style="color:rgb(19, 202, 239);"class="p3">2020-2022<span> HIGHER SECONDARY EDUCATION NARAYANA ACADEMY</span></p>
+                <p class="p2">Narayana nagar, Nellore, Andhra Pradesh</p>
+                <p style="color:rgb(19, 202, 239);"class="p3">2022-2026<span> B.TECH-AMRITA VISWA VIDYAPEETHAM</span></p>
+                <p class="p2">Amritapuri, Kollam, Kerala</p>
+            </div>
+            <div class="b2">
+                <h3 style="font-size: 24px;">WORK EXPERIENCE <i class="abt_me">&#9200;</i></h3>
+                <p style="font-size: 14px;"><b>AI@AMRITA </b>member, Oct-2022</p>
+                <p style="font-size: 14px">Amrita BTech coded and worked for club members.</p>
+            </div>
+            <div class="b2">
+                <h3 style="font-size: 24px;">ACHIEVEMENTS <i class="abt_me">&#9200;</i></h3>
+                <p style="font-size: 14px"><b>Secured certificate in SSC and Plus 2 Certificate</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    overflow: hidden;
+}
+
+/* Background container */
+.background {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* Select and input */
+select, input[type="number"] {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+
+select:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Execute Button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pendulum Box */
+.pendulum-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    max-height: 50%;
+}
+
+#pendulum {
+    position: relative;
+    transform-origin: top center;
+    position: relative;
+    top:10%;
+}
+
+#pendulum img {
+    max-width: 100%;
+    height: auto;
+    transform-origin: top center;
+
+}
+
+/* Astronaut */
+#astronaut {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+#astronaut:hover {
+    transform: translateY(-10px) rotate(10deg);
+}
+
+/* Deceleration box */
+.deceleration-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+/* Output message box */
+.output-message {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    width: 40%;
+    transform: translateY(-50%);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .background {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .pendulum-box {
+        height: auto;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+        width : 40%;
+
+    }
+
+    .output-message {
+        width: 80%;
+        left: 10%;
+        top: 60%;
+    }
+
+    .deceleration-box {
+        width: 80%;
+        right: 10%;
+        bottom : 40%;
+    }
+}
+
+#weight{
+    width:30%;
+}

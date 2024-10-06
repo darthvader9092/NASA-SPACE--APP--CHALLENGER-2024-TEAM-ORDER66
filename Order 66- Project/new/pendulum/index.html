@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendulum Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #astronaut {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="controls">
+            <h1>Pendulum Simulator</h1>
+            <label for="planet">Select Planet:</label>
+            <select id="planet">
+                <option value="Earth">Earth</option>
+                <option value="Gliese 667 Cc">Gliese 667 Cc</option>
+                <option value="Kepler-186f">Kepler-186f</option>
+                <option value="Kepler-22b">Kepler-22b</option>
+                <option value="Proxima Centauri b">Proxima Centauri b</option>
+                <option value="Kepler-1649c">Kepler-1649c</option>
+                <option value="Kepler-62f">Kepler-62f</option>
+                <option value="TRAPPIST-1e">TRAPPIST-1e</option>
+                <option value="Wolf 1061c">Wolf 1061c</option>
+                <option value="Tau Ceti e">Tau Ceti e</option>
+            </select>
+
+            <label for="force">Force (N):</label>
+            <input type="number" id="force" placeholder="Enter force in Newtons" />
+
+            
+        </div>
+            <label for="weight">Rod Weight (kg):</label>
+            <span><input type="number" id="weight" placeholder="Enter weight in kg" /></span>
+            <div class="deceleration-box" id="decelerationInfo">
+                Deceleration: 0.00 m/s²<br>
+                Time to Rest: 0.00 seconds
+            </div>
+        <div class="pendulum-box">
+            <div id="pendulum">
+                <img src="rod.png" id="rod" alt="Rod">
+            </div>
+            <img src="astronaut.png" id="astronaut" alt="Astronaut">
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
