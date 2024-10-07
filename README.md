@@ -1,6 +1,6 @@
-# Super-Earth Exoplanet Exploration 🌍🚀
+# EXO-PLANET ODYSSEY 🌍🚀
 
-Welcome to the **Super-Earth Exoplanet Exploration** project! This website provides an immersive exploration of Super-Earth exoplanets—planets that are larger than Earth but smaller than Neptune. These worlds have long fascinated astronomers because they could potentially harbor life.
+Welcome to the **EXO-PLANET ODYSSEY** project! This website provides an immersive exploration of Super-Earth exoplanets—planets that are larger than Earth but smaller than Neptune. These worlds have long fascinated astronomers because they could potentially harbor life.
 
 The project combines scientific data with an interactive web experience to educate and inspire visitors about these mysterious planets outside our solar system.
 
